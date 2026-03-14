@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>HeroGym | Unleash Your Inner Hero</title>
+    <meta name="description"
+        content="HeroGym: Egypt's premier fitness sanctuary. Elite coaching, world-class equipment, and a community of legends.">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+
+    <!-- Premium Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo-link">
+                <div class="logo-box"><i class="fas fa-bolt"></i></div>
+                <span class="logo-text">HERO<span class="highlight">GYM</span></span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#coaches">Coaches</a></li>
+                <li><a href="#about">Philosophy</a></li>
+                <li><a href="#payments">Join Now</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="t-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <a href="#payments" class="btn btn-primary d-none-mobile">Join the Elite</a>
+                <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button"
+                    aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- World-Class Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="subtitle fade-in delay-1">Egypt's #1 Fitness Sanctuary</span>
+                <h1 class="fade-in">Unleash Your <span class="highlight">Inner Hero</span></h1>
+                <p class="fade-in delay-1">Where discipline meets science. Transform your physique and mindset in an
+                    environment designed for legends.</p>
+                <div class="hero-btns fade-in delay-2">
+                    <a href="#packages" class="btn btn-primary">Start Your Evolution</a>
+                    <a href="https://wa.me/201015036170" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Speak
+                        with a Coach</a>
+                </div>
+            </div>
+            <div class="hero-image-vessel fade-in delay-3">
+                <img src="hero-bg.jpg" alt="HeroGym Training" id="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- Packages Section -->
+    <section class="packages section" id="packages">
+        <div class="container">
+            <div class="section-title-wrap center fade-in">
+                <span class="subtitle">Investment Plans</span>
+                <h2>Choose Your <span class="highlight">Path</span></h2>
+                <p>From casual training to elite transformation, we have the perfect protocol for your goals.</p>
+            </div>
+
+            <!-- Packages Slider Container -->
+            <div class="packages-slider-wrapper fade-in">
+                <div class="packages-slider" id="packages-slider">
+                    <div class="packages-track" id="packages-track">
+                        <!-- Package 1: Day Pass -->
+                        <div class="package-card">
+                            <h3>Day Pass</h3>
+                            <div class="p-price"><span class="cur">EGP</span>100<span class="per">/ Session</span></div>
+                            <ul class="p-features">
+                                <li><i class="fas fa-check-circle"></i> Single Entry</li>
+                                <li><i class="fas fa-check-circle"></i> Full Equipment Access</li>
+                                <li><i class="fas fa-check-circle"></i> Locker & Shower</li>
+                                <li><i class="fas fa-times-circle" style="color:var(--text-muted)"></i> No Personal
+                                    Coaching</li>
+                            </ul>
+                            <a href="#payments" class="btn btn-outline">Go Now</a>
+                        </div>
+
+                        <!-- Package 2: General -->
+                        <div class="package-card">
+                            <h3>General Tier</h3>
+                            <div class="p-price"><span class="cur">EGP</span>450<span class="per">/ Month</span></div>
+                            <ul class="p-features">
+                                <li><i class="fas fa-check-circle"></i> Unlimited Access (24/7)</li>
+                                <li><i class="fas fa-check-circle"></i> Initial Assessment</li>
+                                <li><i class="fas fa-check-circle"></i> Locker Room Access</li>
+                                <li><i class="fas fa-check-circle"></i> Basic Workout Plan</li>
+                            </ul>
+                            <a href="#payments" class="btn btn-outline">Subscribe</a>
+                        </div>
+
+                        <!-- Package 3: Private Coaching -->
+                        <div class="package-card popular">
+                            <span class="badge">Most Wanted</span>
+                            <h3>Private Coaching</h3>
+                            <div class="p-price"><span class="cur">EGP</span>1000<span class="per">/ Month</span></div>
+                            <ul class="p-features">
+                                <li><i class="fas fa-star" style="color:var(--accent)"></i> 12 Sessions/Mo with Pro</li>
+                                <li><i class="fas fa-check-circle"></i> Custom Macro/Meal Plans</li>
+                                <li><i class="fas fa-check-circle"></i> 24/7 WhatsApp Support</li>
+                                <li><i class="fas fa-check-circle"></i> Weekly Progress Audit</li>
+                            </ul>
+                            <a href="#payments" class="btn btn-primary">Choose Level</a>
+                        </div>
+
+                        <!-- Package 4: Elite Athlete -->
+                        <div class="package-card">
+                            <h3>Elite Athlete</h3>
+                            <div class="p-price"><span class="cur">EGP</span>1800<span class="per">/ Month</span></div>
+                            <ul class="p-features">
+                                <li><i class="fas fa-check-circle"></i> Daily Personal Training</li>
+                                <li><i class="fas fa-check-circle"></i> Pro Contest Prep Support</li>
+                                <li><i class="fas fa-check-circle"></i> Supplement Protocol</li>
+                                <li><i class="fas fa-check-circle"></i> Priority Facility Access</li>
+                            </ul>
+                            <a href="#payments" class="btn btn-outline">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="slider-prev"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="slider-dots"></div>
+                    <button class="slider-btn next" id="slider-next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="coaches section" id="coaches" style="background:var(--bg-accent)">
+        <div class="container">
+            <div class="section-title-wrap center fade-in">
+                <span class="subtitle">The Elite Guard</span>
+                <h2>Expert <span class="highlight">Coaches</span></h2>
+                <p>Our trainers aren't just experts; they're practitioners who live the lifestyle every day.</p>
+            </div>
+
+            <!-- Coaches Slider -->
+            <div class="coaches-slider-wrapper fade-in">
+                <div class="coaches-slider" id="coaches-slider">
+                    <div class="coaches-track" id="coaches-track">
+
+                        <!-- Coach 1 -->
+                        <div class="coach-box">
+                            <div class="coach-visual">
+                                <img src="coach-1.jpg" alt="Coach Amgad" loading="lazy">
+                                <div class="coach-visual-overlay"></div>
+                            </div>
+                            <div class="coach-details">
+                                <span class="coach-tag">Strength & Hypertrophy</span>
+                                <h3>Coach Amgad</h3>
+                                <p class="coach-bio">8+ years of molding physiques through scientific resistance
+                                    training.</p>
+                                <div class="coach-stats">
+                                    <div class="coach-stat"><span class="stat-num">8+</span><span
+                                            class="stat-lbl">Years</span></div>
+                                    <div class="coach-stat-divider"></div>
+                                    <div class="coach-stat"><span class="stat-num">200+</span><span
+                                            class="stat-lbl">Clients</span></div>
+                                    <div class="coach-stat-divider"></div>
+                                    <div class="coach-stat"><span class="stat-num">Pro</span><span
+                                            class="stat-lbl">Level</span></div>
+                                </div>
+                                <div class="social-strip">
+                                    <a href="#" class="social-circle" aria-label="Instagram"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-circle" aria-label="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coach 2 -->
+                        <div class="coach-box">
+                            <div class="coach-visual">
+                                <img src="coach-2.jpg" alt="Coach Ahmed El-Azony" loading="lazy">
+                                <div class="coach-visual-overlay"></div>
+                            </div>
+                            <div class="coach-details">
+                                <span class="coach-tag">Body Transformation</span>
+                                <h3>Coach Ahmed El-Azony</h3>
+                                <p class="coach-bio">Master of fat loss protocols and sustainable body recomposition.
+                                </p>
+                                <div class="coach-stats">
+                                    <div class="coach-stat"><span class="stat-num">10+</span><span
+                                            class="stat-lbl">Years</span></div>
+                                    <div class="coach-stat-divider"></div>
+                                    <div class="coach-stat"><span class="stat-num">350+</span><span
+                                            class="stat-lbl">Clients</span></div>
+                                    <div class="coach-stat-divider"></div>
+                                    <div class="coach-stat"><span class="stat-num">Elite</span><span
+                                            class="stat-lbl">Level</span></div>
+                                </div>
+                                <div class="social-strip">
+                                    <a href="#" class="social-circle" aria-label="Instagram"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-circle" aria-label="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coach 3 -->
+                        <div class="coach-box">
+                            <div class="coach-visual">
+                                <img src="coach-3.jpg" alt="Coach Islam" loading="lazy">
+                                <div class="coach-visual-overlay"></div>
+                            </div>
+                            <div class="coach-details">
+                                <span class="coach-tag">Functional Performance</span>
+                                <h3>Coach Islam</h3>
+                                <p class="coach-bio">Endurance and mobility specialist focused on real-world athletic
+                                    power.</p>
+                                <div class="coach-stats">
+                                    <div class="coach-stat"><span class="stat-num">6+</span><span
+                                            class="stat-lbl">Years</span></div>
+                                    <div class="coach-stat-divider"></div>
+                                    <div class="coach-stat"><span class="stat-num">150+</span><span
+                                            class="stat-lbl">Clients</span></div>
+                                    <div class="coach-stat-divider"></div>
+                                    <div class="coach-stat"><span class="stat-num">Pro</span><span
+                                            class="stat-lbl">Level</span></div>
+                                </div>
+                                <div class="social-strip">
+                                    <a href="#" class="social-circle" aria-label="Instagram"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-circle" aria-label="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /coaches-track -->
+                </div><!-- /coaches-slider -->
+
+                <!-- Slider Controls -->
+                <div class="slider-controls coaches-controls">
+                    <button class="slider-btn" id="coach-prev" aria-label="Previous coach"><i
+                            class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="coach-dots"></div>
+                    <button class="slider-btn" id="coach-next" aria-label="Next coach"><i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div><!-- /coaches-slider-wrapper -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-title-wrap center fade-in">
+                <span class="subtitle">Success Stories</span>
+                <h2>Born to <span class="highlight">Win</span></h2>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="testimonials-slider-wrapper fade-in">
+                <div class="test-slider" id="test-slider">
+                    <div class="test-track" id="test-track">
+                        <!-- Card 1 -->
+                        <div class="test-card">
+                            <div class="test-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="test-text">"HeroGym changed my life. In 6 months, I lost 20kg and gained a
+                                confidence I
+                                never knew was possible. The coaches are family."</p>
+                            <div class="test-user">
+                                <div class="user-img"><img src="https://i.pravatar.cc/100?u=1" alt="Member"
+                                        loading="lazy"></div>
+                                <div class="user-info">
+                                    <h4>Omar K.</h4>
+                                    <span>Member since 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="test-card">
+                            <div class="test-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="test-text">"The atmosphere here is incomparable. It's not just a gym; it's a
+                                sanctuary
+                                for those who want to push their limits."</p>
+                            <div class="test-user">
+                                <div class="user-img"><img src="https://i.pravatar.cc/100?u=2" alt="Member"
+                                        loading="lazy"></div>
+                                <div class="user-info">
+                                    <h4>Sara M.</h4>
+                                    <span>Private Coaching Client</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="test-card">
+                            <div class="test-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="test-text">"Best equipment in terms of quality and maintenance. Coach Amgad's
+                                program took
+                                my deadlift to 220kg!"</p>
+                            <div class="test-user">
+                                <div class="user-img"><img src="https://i.pravatar.cc/100?u=3" alt="Member"
+                                        loading="lazy"></div>
+                                <div class="user-info">
+                                    <h4>Mostafa R.</h4>
+                                    <span>Elite Athlete Plan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls test-controls">
+                    <button class="slider-btn" id="test-prev" aria-label="Previous testimonial"><i
+                            class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="test-dots"></div>
+                    <button class="slider-btn" id="test-next" aria-label="Next testimonial"><i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section - World Class QR & Links -->
+    <section class="payments section" id="payments">
+        <div class="container">
+            <div class="section-title-wrap center fade-in">
+                <span class="subtitle">Secure Registration</span>
+                <h2>Claim Your <span class="highlight">Spot</span></h2>
+                <p>Fast, secure, and hassle-free payments to start your journey today.</p>
+            </div>
+
+            <div class="payments-container">
+                <!-- InstaPay Card -->
+                <div class="p-method-card instapay-theme fade-in">
+                    <div class="p-info">
+                        <div class="p-icon-wrap">
+                            <img src="instapay-icon.png" alt="InstaPay">
+                        </div>
+                        <h3>InstaPay</h3>
+                        <p>Instant transfer via InstaPay. The fastest way to join the Hero community.</p>
+                        <a href="https://ipn.eg/S/moshosha267/instapay/5tyvIF" target="_blank"
+                            class="btn btn-pay-action">Pay with InstaPay App</a>
+                    </div>
+                    <div class="qr-col">
+                        <div class="qr-box shadow-sm">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://ipn.eg/S/moshosha267/instapay/5tyvIF&bgcolor=f8f9fa"
+                                alt="InstaPay QR">
+                        </div>
+                        <span class="qr-label">Scan to Pay</span>
+                    </div>
+                </div>
+
+                <!-- Vodafone Cash Card -->
+                <div class="p-method-card vodafone-theme fade-in delay-1">
+                    <div class="p-info">
+                        <div class="p-icon-wrap">
+                            <img src="Vodafone-Logo (1).png" alt="Vodafone Cash">
+                        </div>
+                        <h3>Vodafone Cash</h3>
+                        <p>Easy mobile wallet payment. Secure and widely available across Egypt.</p>
+                        <a href="http://vf.eg/vfcash?id=mt&qrId=wKrq0h" target="_blank" class="btn btn-pay-action">Send
+                            via Wallet</a>
+                    </div>
+                    <div class="qr-col">
+                        <div class="qr-box">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=http://vf.eg/vfcash?id=mt&qrId=wKrq0h&bgcolor=f8f9fa"
+                                alt="Vodafone QR">
+                        </div>
+                        <span class="qr-label">Scan to Pay</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center fade-in delay-2" style="margin-top: 60px;">
+                <p style="font-size: 18px; font-weight: 600;">
+                    Send screenshot to: <span class="highlight">01070658742</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-top">
+            <div class="f-col about-f">
+                <a href="#home" class="logo-link" style="margin-bottom: 25px;">
+                    <div class="logo-box"><i class="fas fa-bolt"></i></div>
+                    <span class="logo-text">HERO<span class="highlight">GYM</span></span>
+                </a>
+                <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 20px;">Redefining the standard of
+                    fitness in Egypt since 2024. Elevate your potential.</p>
+                <div class="social-strip">
+                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="f-col">
+                <h4>Quick Links</h4>
+                <ul class="f-links">
+                    <li><a href="#home">Home Base</a></li>
+                    <li><a href="#packages">Membership Packages</a></li>
+                    <li><a href="#coaches">Coach Roster</a></li>
+                    <li><a href="#about">The Philosophy</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Support</h4>
+                <ul class="f-links">
+                    <li><a href="#payments">Billing & Payments</a></li>
+                    <li><a href="#home">Gym Rules</a></li>
+                    <li><a href="#home">Careers</a></li>
+                    <li><a href="#home">Community</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Visit Us</h4>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;"><i
+                        class="fas fa-map-marker-alt" style="color:var(--primary); margin-right: 10px;"></i> New Cairo,
+                    Egypt</p>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;"><i class="fas fa-phone-alt"
+                        style="color:var(--primary); margin-right: 10px;"></i> +20 107 065 8742</p>
+                <p style="color: var(--text-muted); font-size: 14px;"><i class="far fa-clock"
+                        style="color:var(--primary); margin-right: 10px;"></i> Open 24/7 for Members</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="center"
+                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; color: var(--text-muted); font-size: 14px;">
+                &copy; 2024 HeroGym Egypt. Designed by Elite Minds.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FABs -->
+    <div class="fab-container">
+        <a href="https://wa.me/201015036170" class="fab whatsapp-fab" target="_blank" title="Chat with us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
